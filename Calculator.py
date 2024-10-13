@@ -1,6 +1,5 @@
 FirstNumber = 0
 Total = 1
-SecondNumber = 0
 while True:
     #checks to see if the first number is equal to the total to continue calculations after the loop
     if FirstNumber == Total:
