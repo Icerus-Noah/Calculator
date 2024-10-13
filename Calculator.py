@@ -13,6 +13,7 @@ while True:
             continue
         pass
     else:
+        #inputs numbers and operations and returns back if invalid value has been inputed
         FirstNumber = input('Please enter your first number: ')
         if FirstNumber.isnumeric() != True:
             print('Please enter a valid number') 
@@ -25,6 +26,7 @@ while True:
         if Operation != '*' and Operation != '+' and Operation != '-' and Operation != '/':
             print('Please enter a valid operation')
             continue
+    #calculates the operation
     if Operation == '*':
         Total = float(FirstNumber) * float(SecondNumber)
     elif Operation == '/':
@@ -37,6 +39,7 @@ while True:
     elif Operation == '-':
         Total = float(FirstNumber) - float(SecondNumber)
     print(Total)
+    #asks the user if they want to stop or continue calculating
     MultipleOperations = input('Would you like to perform another operation? (Yes or No): ').lower()
     if MultipleOperations == 'no':
         break
