@@ -46,8 +46,7 @@ while True:
     if MultipleOperations == 'no':
         break
     elif MultipleOperations == 'yes':
-        NewOperation = input('Would you like to start a new calculation or use exisiting calculation? (New or Exist): ').lower()
-    else:
+        NewOperation = input('Would you like use exisiting calculation or start a new one? (Exist or New): ').lower()
         if NewOperation == 'new':
             continue
         elif NewOperation == 'exist':
