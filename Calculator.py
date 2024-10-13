@@ -39,12 +39,15 @@ while True:
     elif Operation == '-':
         Total = float(FirstNumber) - float(SecondNumber)
     print(Total)
+    if Total == 'Error: Cannot divide by zero':
+        continue
     #asks the user if they want to stop or continue calculating
     MultipleOperations = input('Would you like to perform another operation? (Yes or No): ').lower()
     if MultipleOperations == 'no':
         break
     elif MultipleOperations == 'yes':
         NewOperation = input('Would you like to start a new calculation or use exisiting calculation? (New or Exist): ').lower()
+    else:
         if NewOperation == 'new':
             continue
         elif NewOperation == 'exist':
