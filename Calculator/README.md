@@ -1,1 +1,1 @@
-Simple Calculator made for progamming club
+**Simple Calculator made for progamming club**
